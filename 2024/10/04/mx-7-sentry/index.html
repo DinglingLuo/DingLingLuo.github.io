@@ -489,51 +489,32 @@
 
 <h1 id="Introduction-to-Robot-Design-Background"><a href="#Introduction-to-Robot-Design-Background" class="headerlink" title="Introduction to Robot Design Background"></a>Introduction to Robot Design Background</h1><p>The mission of the Sentinel Robot has changed from “the last line of defense at the gate of the base” from last season to <strong>“a fully automatic robot equipped with the most firepower”</strong>.<br>Sentries are invincible until the outpost is destroyed, and allows for two muzzles with a very high rate of fire, making the sentry invincible early in the match.This makes the Sentinel much more aggressive.The Sentinel needs to go out to attack the opponent’s robot, and since the Sentinel is a fully automatic robot, it needs to be equipped with map-aware sensors, navigation algorithms, and an automatic aiming transmitter mechanism. We used a combination of lidar and gyroscope to navigate and correct the robot’s position. Use industrial cameras to find each other’s location and lock onto each other. It is also equipped with gravity and distance compensation algorithms to correct the trajectory of the attack to improve the hit rate.</p>
 <h1 id="Robot-Design-Metrics"><a href="#Robot-Design-Metrics" class="headerlink" title="Robot Design Metrics"></a>Robot Design Metrics</h1><h2 id="Sentinel-Robot’s-function"><a href="#Sentinel-Robot’s-function" class="headerlink" title="Sentinel Robot’s function"></a>Sentinel Robot’s function</h2><h3 id="Chassis-function-design"><a href="#Chassis-function-design" class="headerlink" title="Chassis function design"></a>Chassis function design</h3><ul>
-<li>There will be no rollover in all terrains </li>
-<li><ol>
+<li>There will be no rollover in all terrains <ul>
 <li>Control the height of the center of gravity</li>
-</ol>
-</li>
-<li><ol start="2">
 <li>Maximum track width</li>
-</ol>
+</ul>
 </li>
 <li>Strong mobility</li>
 <li>Mecanum wheel design</li>
-<li>Reduce gimbal shake to enhance aiming</li>
-<li><ol start="3">
+<li>Reduce gimbal shake to enhance aiming<ul>
 <li>Has a four-wheel independent suspension system</li>
-</ol>
+</ul>
 </li>
 </ul>
 <h3 id="Gimbal-functional-design"><a href="#Gimbal-functional-design" class="headerlink" title="Gimbal functional design"></a>Gimbal functional design</h3><ul>
-<li>Twin firing mechanisms</li>
-<li><ol>
+<li>Twin firing mechanisms<ul>
 <li>One dial and two muzzles are used to reduce the weight of the gimbal and calculate the muzzle heat and cooling separately.</li>
-</ol>
-</li>
-<li><ol start="2">
 <li>The gimbal and the chassis are connected by slip rings in the middle, so that the gimbal can lock the opponent’s robot while the chassis rotates.</li>
-</ol>
-</li>
-<li><ol start="3">
 <li>he magazine is arranged in the chassis, and the projectile track passes through the relative center of rotation of the gimbal and the chassis to ensure that the projectile can be fired smoothly during the rotation of the chassis.</li>
-</ol>
+</ul>
 </li>
 </ul>
 <h3 id="Other-functions"><a href="#Other-functions" class="headerlink" title="Other functions"></a>Other functions</h3><ul>
-<li>Easy to maintain</li>
-<li><ol>
+<li>Easy to maintain<ul>
 <li>Small module damage can be repaired within 2 minutes</li>
-</ol>
-</li>
-<li><ol start="2">
 <li>Large module damage can be repaired within 3 minutes</li>
-</ol>
-</li>
-<li><ol start="3">
 <li>Use m4 screws and nuts as far as possible to facilitate replacement and maintenance</li>
-</ol>
+</ul>
 </li>
 <li>High stability, not easy to damage</li>
 <li>The overall shape is elegent and generous</li>
